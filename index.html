@@ -55,6 +55,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center">
+                    <!-- Logo / Name could go here if needed -->
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#about" class="text-gray-600 hover:text-brand-dark transition-colors font-medium text-sm">關於我</a>
@@ -114,17 +115,22 @@
             </div>
             
             <div class="max-w-4xl mx-auto">
-                <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-lg text-center relative overflow-hidden">
+                <!-- 調整：維持區塊置中 (mx-auto)，但內容文字設定為靠左對齊 (text-left) -->
+                <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-lg text-left relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-purple-200 via-brand-soft to-purple-200"></div>
                     
-                    <h3 class="text-2xl font-bold mb-6 text-brand-dark flex items-center justify-center">
+                    <!-- 標題部分，可以考慮靠左或置中，配合內文靠左，這裡也設定為靠左對齊較為整齊 -->
+                    <h3 class="text-2xl font-bold mb-6 text-brand-dark flex items-center justify-start">
                         <i class="fas fa-user-tag mr-3"></i>跨領域的核心價值
                     </h3>
-                    <p class="text-slate-600 leading-relaxed mb-6 text-lg text-left md:text-center">
-                        我是一位具備 <span class="font-bold text-slate-900 bg-purple-50 px-1 rounded">「永續評鑑視角」</span> 的永續工作者。在國立臺北大學永續中心擔任評鑑助理期間，我負責查核上市櫃公司的 ESG 數據，這讓我深刻理解<span class="font-bold text-brand-dark">「分數背後的邏輯」</span>。
+
+                    <!-- 內文已更新，且移除 text-center 類別 -->
+                    <p class="text-slate-600 leading-relaxed mb-6 text-lg">
+                        我是一位從<span class="font-bold text-slate-900 bg-purple-50 px-1 rounded">「評鑑視角」</span>出發的永續工作者，在國立臺北大學永續中心擔任評鑑助理期間，我負責查核上市櫃公司的環境、社會、治理相關數據。
                     </p>
-                    <p class="text-slate-600 leading-relaxed text-lg text-left md:text-center">
-                        不同於傳統商管背景，我透過經濟部 AI 新秀計畫，掌握了 <span class="font-bold text-slate-900 bg-purple-50 px-1 rounded">Python 與生成式 AI 技術</span>。我不只能撰寫報告，更能開發自動化工具來優化繁雜的數據盤查流程，並運用 SROI 模型將質化影響力轉化為投資人看懂的財務指標。
+                    
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        不同於傳統商管背景，我透過經濟部 AI 新秀計畫，掌握了 <span class="font-bold text-slate-900 bg-purple-50 px-1 rounded">Python 與生成式 AI 技術</span>。我不只能撰寫報告，更能開發自動化工具來優化繁雜的數據盤查流程，並運用 <span class="font-bold text-slate-900 bg-purple-50 px-1 rounded">SROI 模型</span>將質化影響力轉化為投資人看懂的財務指標。
                     </p>
                 </div>
             </div>
@@ -253,7 +259,7 @@
                                     <span class="text-xs text-slate-500 bg-slate-100 px-2 py-1 rounded">AI-900 基礎</span>
                                 </div>
                             </div>
-                            <p class="text-xs text-slate-500 mt-3 pt-3 border-t border-slate-50">具備三大雲端平台之 AI 應用基礎與部署概念</p>
+                            <!-- 已刪除底部的描述文字 -->
                         </div>
 
                         <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
