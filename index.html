@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>殷可盈 YIN, KO-YING | 永續金融與數據治理專家</title>
+    <meta name="description" content="結合永續評鑑視角與 AI 技術，為企業打造精準的 ESG 揭露與管理系統。">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // 個人代表色：霧灰紫 (Muted Lavender)
+                        brand: {
+                            bg: '#FAF5FF',      // 極淡紫背景
+                            light: '#E9D8FD',   // 淺紫 (裝飾用)
+                            soft: '#C4B5FD',    // 柔和紫 (圖表/底色)
+                            DEFAULT: '#8B5CF6', // 標準紫 (按鈕)
+                            dark: '#6D28D9',    // 深紫 (文字)
+                            muted: '#7C3AED',   // 沉穩紫 (強調文字)
+                        },
+                        slate: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 背景裝飾 */
+        .hero-bg {
+            background: linear-gradient(135deg, #FDF4FF 0%, #FFFFFF 60%, #F5F3FF 100%);
+        }
+        /* 文字選取顏色 */
+        ::selection {
+            background-color: #C4B5FD;
+            color: white;
+        }
+        /* 卡片懸浮微光 */
+        .hover-card:hover {
+            box-shadow: 0 10px 40px -10px rgba(139, 92, 246, 0.15);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+    <!-- 導覽列 -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300 border-b border-slate-100" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- 導覽列姓名 -->
+                    <span class="font-bold text-lg tracking-wider text-brand-dark border-2 border-brand-dark px-2 py-1">YIN, KO-YING</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-brand-dark transition-colors font-medium text-sm">關於我</a>
+                    <a href="#qualifications" class="text-gray-600 hover:text-brand-dark transition-colors font-medium text-sm">專業資格</a>
+                    <a href="#projects" class="text-gray-600 hover:text-brand-dark transition-colors font-medium text-sm">精選專案</a>
+                    <a href="#endorsements" class="text-gray-600 hover:text-brand-dark transition-colors font-medium text-sm">推薦信</a>
+                    <a href="#contact" class="px-5 py-2 rounded-full bg-brand-dark text-white hover:bg-brand-muted transition-colors text-sm font-bold shadow-md hover:shadow-lg">聯絡我</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (首頁區塊) -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 hero-bg relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center relative z-10">
+            <!-- 文字區 -->
+            <div class="w-full md:w-3/5 pr-0 md:pr-12 text-center md:text-left mt-10 md:mt-0">
+                <h2 class="text-brand-muted font-bold tracking-wide uppercase text-sm mb-3">Sustainable Finance & Data Specialist</h2>
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
+                    殷可盈 <span class="text-slate-400 text-xl md:text-2xl block md:inline mt-2 md:mt-0 font-normal align-middle ml-0 md:ml-2">YIN, KO-YING</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                    結合<span class="font-bold text-brand-dark border-b-2 border-brand-light">永續評鑑視角</span>與 <span class="font-bold text-brand-dark border-b-2 border-brand-light">AI 技術</span>，<br>為企業打造精準的 ESG 揭露與管理系統。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="px-8 py-3 rounded-lg bg-brand-dark text-white font-bold hover:bg-brand-muted transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        查看專案作品
+                    </a>
+                </div>
+                
+                <!-- 關鍵字標籤 -->
+                <div class="mt-10 flex flex-wrap gap-3 justify-center md:justify-start text-sm text-slate-600">
+                    <span class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-slate-200 flex items-center hover:border-brand-soft transition-colors"><i class="fas fa-code text-brand-muted mr-2"></i>Python / AI</span>
+                    <span class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-slate-200 flex items-center hover:border-brand-soft transition-colors"><i class="fas fa-chart-pie text-brand-muted mr-2"></i>SROI 分析</span>
+                    <span class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-slate-200 flex items-center hover:border-brand-soft transition-colors"><i class="fas fa-book text-brand-muted mr-2"></i>GRI / SASB</span>
+                    <span class="bg-white px-4 py-1.5 rounded-full shadow-sm border border-slate-200 flex items-center hover:border-brand-soft transition-colors"><i class="fas fa-check-circle text-brand-muted mr-2"></i>ESG 評鑑</span>
+                </div>
+            </div>
+            
+            <!-- 圖片區 -->
+            <div class="w-full md:w-2/5 flex justify-center md:justify-end relative">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <!-- 裝飾圓圈 -->
+                    <div class="absolute inset-0 bg-brand-light/30 rounded-full blur-3xl transform translate-x-4 translate-y-4"></div>
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-purple-100 rounded-full blur-2xl opacity-60"></div>
+                    <!-- 頭像容器：請將 src 改為您的照片路徑 images/profile.jpg -->
+                    <img src="https://ui-avatars.com/api/?name=Ko-Ying+Yin&background=8B5CF6&color=fff&size=512" alt="殷可盈 YIN, KO-YING" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl z-10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me (已移除顏色故事) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">關於我</h2>
+                <div class="w-20 h-1 bg-brand-soft mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-lg text-center relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-purple-200 via-brand-soft to-purple-200"></div>
+                    
+                    <h3 class="text-2xl font-bold mb-6 text-brand-dark flex items-center justify-center">
+                        <i class="fas fa-user-tag mr-3"></i>跨領域的核心價值
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed mb-6 text-lg text-left md:text-center">
+                        我是一位具備 <span class="font-bold text-slate-900 bg-purple-50 px-1 rounded">「永續評鑑視角」</span> 的永續工作者。在國立臺北大學永續中心擔任評鑑助理期間，我負責查核上市櫃公司的 ESG 數據，這讓我深刻理解<span class="font-bold text-brand-dark">「分數背後的邏輯」</span>。
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-lg text-left md:text-center">
+                        不同於傳統商管背景，我透過經濟部 AI 新秀計畫，掌握了 <span class="font-bold text-slate-900 bg-purple-50 px-1 rounded">Python 與生成式 AI 技術</span>。我不只能撰寫報告，更能開發自動化工具來優化繁雜的數據盤查流程，並運用 SROI 模型將質化影響力轉化為投資人看懂的財務指標。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications & Training Section -->
+    <section id="qualifications" class="py-20 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-muted font-bold tracking-widest uppercase text-sm">QUALIFICATIONS</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">專業證照與紮實培訓</h2>
+                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">跨足 ESG、AI 與金融領域的國家級專業認證</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- 左欄：專業證照 -->
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center">
+                        <span class="bg-brand-dark w-1.5 h-8 mr-3 rounded-full"></span>
+                        專業證照 (Certifications)
+                    </h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <!-- 經濟部 iPAS -->
+                        <div class="bg-white p-5 rounded-xl border-l-4 border-brand-dark shadow-sm flex justify-between items-center hover-card transition-all hover:translate-x-1">
+                            <div>
+                                <div class="text-xs font-bold text-brand-muted mb-1">經濟部 iPAS (國家級)</div>
+                                <h4 class="font-bold text-slate-800 text-lg">淨零碳規劃管理師</h4>
+                            </div>
+                            <i class="fas fa-certificate text-2xl text-purple-100 group-hover:text-brand-dark transition-colors"></i>
+                        </div>
+                        
+                        <!-- 經濟部 iPAS AI -->
+                        <div class="bg-white p-5 rounded-xl border-l-4 border-brand-dark shadow-sm flex justify-between items-center hover-card transition-all hover:translate-x-1">
+                            <div>
+                                <div class="text-xs font-bold text-brand-muted mb-1">經濟部 iPAS (國家級)</div>
+                                <h4 class="font-bold text-slate-800 text-lg">AI 應用規劃師</h4>
+                            </div>
+                            <i class="fas fa-robot text-2xl text-purple-100 group-hover:text-brand-dark transition-colors"></i>
+                        </div>
+
+                        <!-- 國際證照 -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-brand-soft transition-colors">
+                                <div class="text-xs text-gray-500">AWS</div>
+                                <div class="font-bold text-slate-800">Certified AI Practitioner</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-brand-soft transition-colors">
+                                <div class="text-xs text-gray-500">GRI Standards</div>
+                                <div class="font-bold text-slate-800">永續報告書管理師</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-brand-soft transition-colors">
+                                <div class="text-xs text-gray-500">ISO 14064-1</div>
+                                <div class="font-bold text-slate-800">溫室氣體盤查</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-brand-soft transition-colors">
+                                <div class="text-xs text-gray-500">ISO 14067</div>
+                                <div class="font-bold text-slate-800">產品碳足跡盤查</div>
+                            </div>
+                        </div>
+
+                        <!-- 其他專業 -->
+                        <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex flex-wrap gap-2 items-center">
+                            <span class="font-bold text-slate-700 mr-2 text-sm">其他認證：</span>
+                            <span class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-xs">TQC Python 專業級</span>
+                            <span class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-xs">金融市場常識與職業道德</span>
+                            <span class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-xs">永續發展基礎能力測驗</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右欄：重點培訓 -->
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center">
+                        <span class="bg-blue-600 w-1.5 h-8 mr-3 rounded-full"></span>
+                        紮實培訓經歷 (Intensive Training)
+                    </h3>
+                    <div class="space-y-4">
+                        <!-- AI 新秀 -->
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-blue-500 transition-all hover:-translate-y-1">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="bg-blue-50 text-blue-700 text-xs px-2 py-1 rounded-full font-bold">經濟部</span>
+                                    <h4 class="font-bold text-slate-800 text-lg mt-2">AI 新秀培訓計畫 - 金融創新 X 生成式 AI</h4>
+                                    <p class="text-sm text-slate-500 mt-1">國立臺北大學主辦 (為期四個月)</p>
+                                </div>
+                                <div class="text-slate-400 text-xs">2025</div>
+                            </div>
+                        </div>
+
+                        <!-- 環境部 環教 -->
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-green-500 transition-all hover:-translate-y-1">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="bg-green-50 text-green-700 text-xs px-2 py-1 rounded-full font-bold">環境部</span>
+                                    <h4 class="font-bold text-slate-800 text-lg mt-2">環境教育人員訓練</h4>
+                                    <p class="text-sm text-slate-500 mt-1">中央大學主辦</p>
+                                </div>
+                                <div class="text-slate-400 text-xs">2025</div>
+                            </div>
+                        </div>
+
+                        <!-- 環境部 綠領 -->
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-green-500 transition-all hover:-translate-y-1">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="bg-green-50 text-green-700 text-xs px-2 py-1 rounded-full font-bold">環境部</span>
+                                    <h4 class="font-bold text-slate-800 text-lg mt-2">淨零綠領人才培育課程</h4>
+                                    <p class="text-sm text-slate-500 mt-1">中央大學主辦</p>
+                                </div>
+                                <div class="text-slate-400 text-xs">2025</div>
+                            </div>
+                        </div>
+
+                        <!-- 其他培訓列表 -->
+                        <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex items-center"><i class="fas fa-check text-brand-muted mr-2"></i> 勞動部 ESG 淨零人才永續管理師養成班</li>
+                                <li class="flex items-center"><i class="fas fa-check text-brand-muted mr-2"></i> 勞動部 ESG 企業永續報告書製作實務班</li>
+                                <li class="flex items-center"><i class="fas fa-check text-brand-muted mr-2"></i> Google Cloud 學程結業證書</li>
+                                <li class="flex items-center"><i class="fas fa-check text-brand-muted mr-2"></i> Python 大數據資料分析實戰班</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-muted font-bold tracking-widest uppercase text-sm">PORTFOLIO</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">精選專案成果</h2>
+                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">針對永續金融、數據治理與報告書編撰的實戰成果展示</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group h-full border border-slate-100">
+                    <div class="relative h-48 overflow-hidden bg-gray-200">
+                        <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all z-10"></div>
+                        <img src="https://via.placeholder.com/800x600/8B5CF6/ffffff?text=ESG+System+Screenshot" alt="ESG 評鑑自評系統" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white/95 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-brand-dark shadow-sm z-20">
+                            系統開發
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Gemini AI</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-brand-dark transition-colors">ESG 評鑑自評系統</h3>
+                        <p class="text-slate-600 text-sm mb-4 flex-1">
+                            運用前端技術與 AI 獨立開發的自動化工具。內建官方 75 項指標自動計分引擎，支援 CSV/JSON 雙軌匯出，解決人工盤查痛點。
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-100">
+                            <span class="text-brand-dark text-sm font-bold flex items-center">核心技術展示</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group h-full border border-slate-100">
+                    <div class="relative h-48 overflow-hidden bg-gray-200">
+                        <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all z-10"></div>
+                        <img src="https://via.placeholder.com/800x600/2563eb/ffffff?text=Ecoshane+Risk+Model" alt="Ecoshane Bank 風控模型" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white/95 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-blue-600 shadow-sm z-20">
+                            永續金融
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">SROI</span>
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">風險管理</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Ecoshane Bank 風控模型</h3>
+                        <p class="text-slate-600 text-sm mb-4 flex-1">
+                            建構 AI 驅動的 ESG 授信風險評估模型。成功將專案社會投資報酬率提升至 <span class="font-bold text-slate-900">1:3.4</span>，提供量化決策依據。
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-100">
+                            <span class="text-blue-600 text-sm font-bold flex items-center">風險模型展示</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group h-full border border-slate-100">
+                    <div class="relative h-48 overflow-hidden bg-gray-200">
+                        <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all z-10"></div>
+                        <img src="https://via.placeholder.com/800x600/db2777/ffffff?text=Report+Consulting" alt="統領百貨永續報告書" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white/95 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-pink-600 shadow-sm z-20">
+                            實戰顧問
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">GRI Standards</span>
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">內容修訂</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-pink-600 transition-colors">統領百貨 永續報告書</h3>
+                        <p class="text-slate-600 text-sm mb-4 flex-1">
+                            協助上市櫃公司進行報告書內容修訂與優化。檢視內容符合 GRI 準則，提升資訊揭露品質，確保合規性。
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-100">
+                            <span class="text-pink-600 text-sm font-bold flex items-center">專案成果展示</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Endorsement Section -->
+    <section id="endorsements" class="py-12 bg-white border-t border-slate-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 rounded-2xl p-6 md:p-8 relative border border-slate-100 shadow-sm">
+                <i class="fas fa-quote-left text-2xl text-brand-light absolute top-6 left-6"></i>
+                
+                <div class="flex flex-col md:flex-row gap-6 items-start relative z-10">
+                    <div class="w-full md:w-auto flex-shrink-0">
+                        <img src="https://via.placeholder.com/150x200/f1f5f9/94a3b8?text=Letter" alt="池祥麟副校長推薦信" class="w-32 rounded shadow border border-slate-200 mx-auto md:mx-0">
+                    </div>
+                    <div class="w-full">
+                        <div class="mb-3">
+                            <h3 class="text-lg font-bold text-slate-900">來自學界的肯定</h3>
+                            <p class="text-brand-dark text-sm font-bold">國立臺北大學 副校長 池祥麟 教授</p>
+                        </div>
+                        <blockquote class="text-slate-600 text-base leading-relaxed mb-4 italic">
+                            "可盈於本中心任職期間，表現優良...她運用文本解讀與數據分析素養，歸納、核實資料並進行初步分析。此外，她<span class="bg-purple-50 text-slate-900 px-1 not-italic">導入 AI 自動化工具以提升工作效率</span>，其自主學習與解決問題能力，獲得同仁肯定。"
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW Color Identity Section (位於底部，字體縮小) -->
+    <section class="py-12 bg-purple-50 border-t border-purple-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h4 class="text-brand-muted font-bold text-xs uppercase tracking-widest mb-3">MY COLOR IDENTITY</h4>
+            <p class="text-slate-600 text-sm leading-relaxed max-w-2xl mx-auto">
+                跳脫傳統的「永續綠」，我選擇紫色代表「科技賦能」，在清一色的綠色永續浪潮中，紫色象徵著我的差異化定位。它代表我不僅關注環境目標，更擅長運用 <span class="font-bold text-brand-dark">科技與數據的方法論</span> 來解決問題，將抽象的 ESG 概念，轉化為精準、可執行的企業策略。
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-8">準備好為永續轉型貢獻一份心力</h2>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-12">
+                <a href="mailto:yinkoying.yky@gmail.com" class="flex items-center justify-center gap-3 bg-brand-dark hover:bg-brand-muted text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-lg shadow-purple-900/50">
+                    <i class="fas fa-envelope"></i> yinkoying.yky@gmail.com
+                </a>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-center items-center text-slate-500 text-sm">
+                <p>&copy; 2025 YIN, KO-YING. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
