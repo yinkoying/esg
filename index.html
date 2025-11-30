@@ -63,8 +63,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center">
-                    <!-- 導覽列姓名 -->
-                    <span class="font-bold text-lg tracking-wider text-brand-dark border-2 border-brand-dark px-2 py-1">YIN, KO-YING</span>
+                    <!-- 導覽列姓名：已刪除 -->
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#about" class="text-gray-600 hover:text-brand-dark transition-colors font-medium text-sm">關於我</a>
@@ -122,7 +121,7 @@
         </div>
     </section>
 
-    <!-- About Me (已移除顏色故事) -->
+    <!-- About Me -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -163,7 +162,7 @@
                 <div>
                     <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center">
                         <span class="bg-brand-dark w-1.5 h-8 mr-3 rounded-full"></span>
-                        專業證照 (Certifications)
+                        專業證照
                     </h3>
                     <div class="grid grid-cols-1 gap-4">
                         <!-- 經濟部 iPAS -->
@@ -184,12 +183,8 @@
                             <i class="fas fa-robot text-2xl text-purple-100 group-hover:text-brand-dark transition-colors"></i>
                         </div>
 
-                        <!-- 國際證照 -->
+                        <!-- 國際證照 (已移除 AWS) -->
                         <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-brand-soft transition-colors">
-                                <div class="text-xs text-gray-500">AWS</div>
-                                <div class="font-bold text-slate-800">Certified AI Practitioner</div>
-                            </div>
                             <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-brand-soft transition-colors">
                                 <div class="text-xs text-gray-500">GRI Standards</div>
                                 <div class="font-bold text-slate-800">永續報告書管理師</div>
@@ -201,6 +196,10 @@
                             <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-brand-soft transition-colors">
                                 <div class="text-xs text-gray-500">ISO 14067</div>
                                 <div class="font-bold text-slate-800">產品碳足跡盤查</div>
+                            </div>
+                            <!-- 為了版面平衡，可考慮放其他證照，或保持空白 -->
+                            <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm hover:border-brand-soft transition-colors flex items-center justify-center">
+                                <span class="text-xs text-gray-400">持續進修中...</span>
                             </div>
                         </div>
 
@@ -214,14 +213,14 @@
                     </div>
                 </div>
 
-                <!-- 右欄：重點培訓 -->
+                <!-- 右欄：重點培訓與技能 -->
                 <div>
+                    <!-- 培訓 -->
                     <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center">
                         <span class="bg-blue-600 w-1.5 h-8 mr-3 rounded-full"></span>
-                        紮實培訓經歷 (Intensive Training)
+                        紮實培訓經歷
                     </h3>
-                    <div class="space-y-4">
-                        <!-- AI 新秀 -->
+                    <div class="space-y-4 mb-8">
                         <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-blue-500 transition-all hover:-translate-y-1">
                             <div class="flex justify-between items-start">
                                 <div>
@@ -232,8 +231,6 @@
                                 <div class="text-slate-400 text-xs">2025</div>
                             </div>
                         </div>
-
-                        <!-- 環境部 環教 -->
                         <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-green-500 transition-all hover:-translate-y-1">
                             <div class="flex justify-between items-start">
                                 <div>
@@ -244,29 +241,48 @@
                                 <div class="text-slate-400 text-xs">2025</div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- 環境部 綠領 -->
-                        <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-green-500 transition-all hover:-translate-y-1">
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <span class="bg-green-50 text-green-700 text-xs px-2 py-1 rounded-full font-bold">環境部</span>
-                                    <h4 class="font-bold text-slate-800 text-lg mt-2">淨零綠領人才培育課程</h4>
-                                    <p class="text-sm text-slate-500 mt-1">中央大學主辦</p>
-                                </div>
-                                <div class="text-slate-400 text-xs">2025</div>
+                    <!-- 雲端與外語技能 (分開顯示) -->
+                    <div class="grid grid-cols-1 gap-6">
+                        
+                        <!-- 雲端技術 -->
+                        <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                            <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                                <span class="bg-brand-soft w-1.5 h-6 mr-2 rounded-full"></span>
+                                雲端技術
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-50 text-slate-700 px-3 py-1 rounded-full text-xs font-bold border border-slate-200 flex items-center"><i class="fab fa-aws mr-1 text-orange-500"></i>AWS</span>
+                                <span class="bg-slate-50 text-slate-700 px-3 py-1 rounded-full text-xs font-bold border border-slate-200 flex items-center"><i class="fab fa-google mr-1 text-blue-500"></i>GCP</span>
+                                <span class="bg-slate-50 text-slate-700 px-3 py-1 rounded-full text-xs font-bold border border-slate-200 flex items-center"><i class="fab fa-microsoft mr-1 text-blue-400"></i>Azure AI-900</span>
                             </div>
+                            <p class="text-xs text-slate-500 mt-3">具備三大雲端平台之 AI 應用基礎與部署能力</p>
                         </div>
 
-                        <!-- 其他培訓列表 -->
-                        <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
-                            <ul class="space-y-2 text-sm text-slate-600">
-                                <li class="flex items-center"><i class="fas fa-check text-brand-muted mr-2"></i> 勞動部 ESG 淨零人才永續管理師養成班</li>
-                                <li class="flex items-center"><i class="fas fa-check text-brand-muted mr-2"></i> 勞動部 ESG 企業永續報告書製作實務班</li>
-                                <li class="flex items-center"><i class="fas fa-check text-brand-muted mr-2"></i> Google Cloud 學程結業證書</li>
-                                <li class="flex items-center"><i class="fas fa-check text-brand-muted mr-2"></i> Python 大數據資料分析實戰班</li>
+                        <!-- 外語能力 -->
+                        <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                            <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                                <span class="bg-brand-soft w-1.5 h-6 mr-2 rounded-full"></span>
+                                外語能力
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex justify-between items-center border-b border-slate-50 pb-2">
+                                    <span class="text-slate-600 text-sm font-medium">TOEIC 多益測驗</span>
+                                    <div class="flex flex-col text-right">
+                                        <span class="bg-purple-50 text-brand-dark px-2 py-1 rounded text-xs font-bold mb-1">720 分</span>
+                                        <span class="text-slate-400 text-xs scale-90 origin-right">(聽 370 + 讀 350)</span>
+                                    </div>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span class="text-slate-600 text-sm font-medium">BESTEP 閱讀能力</span>
+                                    <span class="bg-purple-50 text-brand-dark px-2 py-1 rounded text-xs font-bold">B2 高階級</span>
+                                </li>
                             </ul>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
@@ -286,7 +302,7 @@
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group h-full border border-slate-100">
                     <div class="relative h-48 overflow-hidden bg-gray-200">
                         <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all z-10"></div>
-                        <img src="https://via.placeholder.com/800x600/8B5CF6/ffffff?text=ESG+System+Screenshot" alt="ESG 評鑑自評系統" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <img src="images/system.jpg" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/8B5CF6/ffffff?text=ESG+System+Screenshot';" alt="ESG 評鑑自評系統" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
                         <div class="absolute top-4 right-4 bg-white/95 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-brand-dark shadow-sm z-20">
                             系統開發
                         </div>
@@ -310,7 +326,7 @@
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group h-full border border-slate-100">
                     <div class="relative h-48 overflow-hidden bg-gray-200">
                         <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all z-10"></div>
-                        <img src="https://via.placeholder.com/800x600/2563eb/ffffff?text=Ecoshane+Risk+Model" alt="Ecoshane Bank 風控模型" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <img src="images/bank.jpg" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/2563eb/ffffff?text=Ecoshane+Risk+Model';" alt="Ecoshane Bank 風控模型" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
                         <div class="absolute top-4 right-4 bg-white/95 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-blue-600 shadow-sm z-20">
                             永續金融
                         </div>
@@ -334,7 +350,7 @@
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group h-full border border-slate-100">
                     <div class="relative h-48 overflow-hidden bg-gray-200">
                         <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all z-10"></div>
-                        <img src="https://via.placeholder.com/800x600/db2777/ffffff?text=Report+Consulting" alt="統領百貨永續報告書" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <img src="images/report.jpg" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/db2777/ffffff?text=Report+Consulting';" alt="統領百貨永續報告書" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
                         <div class="absolute top-4 right-4 bg-white/95 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-pink-600 shadow-sm z-20">
                             實戰顧問
                         </div>
@@ -365,7 +381,7 @@
                 
                 <div class="flex flex-col md:flex-row gap-6 items-start relative z-10">
                     <div class="w-full md:w-auto flex-shrink-0">
-                        <img src="https://via.placeholder.com/150x200/f1f5f9/94a3b8?text=Letter" alt="池祥麟副校長推薦信" class="w-32 rounded shadow border border-slate-200 mx-auto md:mx-0">
+                        <img src="images/letter_preview.jpg" onerror="this.onerror=null; this.src='https://via.placeholder.com/150x200/f1f5f9/94a3b8?text=Letter';" alt="池祥麟副校長推薦信" class="w-32 rounded shadow border border-slate-200 mx-auto md:mx-0">
                     </div>
                     <div class="w-full">
                         <div class="mb-3">
