@@ -47,6 +47,10 @@
         .hover-card:hover {
             box-shadow: 0 10px 40px -10px rgba(139, 92, 246, 0.15);
         }
+        /* 自定義按鈕樣式 */
+        .btn-outline-brand {
+            @apply border border-brand-soft text-brand-dark bg-white hover:bg-brand-dark hover:text-white transition-all duration-300 rounded px-3 py-2 text-xs font-bold text-center flex items-center justify-center gap-2;
+        }
     </style>
 </head>
 <body class="font-sans text-slate-800 antialiased bg-white">
@@ -115,15 +119,12 @@
             </div>
             
             <div class="max-w-4xl mx-auto">
-                <!-- 調整：維持區塊置中 (mx-auto)，但內容文字設定為靠左對齊 (text-left) -->
                 <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-lg text-left relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-purple-200 via-brand-soft to-purple-200"></div>
                     
-                    <!-- 標題部分，可以考慮靠左或置中，配合內文靠左，這裡也設定為靠左對齊較為整齊 -->
                     <h3 class="text-2xl font-bold mb-6 text-brand-dark flex items-center justify-start">
                         <i class="fas fa-user-tag mr-3"></i>跨領域的核心價值
                     </h3>
-
                     
                     <p class="text-slate-600 leading-relaxed mb-6 text-lg">
                         我是一位從<span class="font-bold text-slate-900 bg-purple-50 px-1 rounded">「評鑑視角」</span>出發的永續工作者，在國立臺北大學永續中心擔任評鑑助理期間，我負責查核上市櫃公司的環境、社會、治理相關數據。
@@ -259,7 +260,6 @@
                                     <span class="text-xs text-slate-500 bg-slate-100 px-2 py-1 rounded">AI-900</span>
                                 </div>
                             </div>
-                            <!-- 已刪除底部的描述文字 -->
                         </div>
 
                         <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
@@ -298,6 +298,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1: ESG 自評系統 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group h-full border border-slate-100">
                     <div class="relative h-48 overflow-hidden bg-gray-200">
                         <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all z-10"></div>
@@ -315,12 +316,21 @@
                         <p class="text-slate-600 text-sm mb-4 flex-1">
                             運用前端技術與 AI 獨立開發的自動化工具。內建官方 75 項指標自動計分引擎，支援 CSV/JSON 雙軌匯出，解決人工盤查痛點。
                         </p>
+                        
                         <div class="mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-brand-dark text-sm font-bold flex items-center">核心技術展示</span>
+                            <div class="flex gap-2 w-full">
+                                <a href="https://ecoshane.pse.is/esgeva_115" target="_blank" class="flex-1 text-center bg-white border border-brand-soft text-brand-dark hover:bg-brand-dark hover:text-white px-3 py-2 rounded text-xs font-bold transition-colors shadow-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i>115年度系統
+                                </a>
+                                <a href="https://ecoshane.pse.is/esgeva_114" target="_blank" class="flex-1 text-center bg-white border border-brand-soft text-brand-dark hover:bg-brand-dark hover:text-white px-3 py-2 rounded text-xs font-bold transition-colors shadow-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i>114年度系統
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Project 2: 風控模型 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group h-full border border-slate-100">
                     <div class="relative h-48 overflow-hidden bg-gray-200">
                         <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all z-10"></div>
@@ -338,12 +348,27 @@
                         <p class="text-slate-600 text-sm mb-4 flex-1">
                             建構 AI 驅動的 ESG 授信風險評估模型。成功將專案社會投資報酬率提升至 <span class="font-bold text-slate-900">1:3.4</span>，提供量化決策依據。
                         </p>
+                        
                         <div class="mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-blue-600 text-sm font-bold flex items-center">風險模型展示</span>
+                            <div class="grid grid-cols-2 gap-2">
+                                <a href="https://ecoshane.pse.is/tw_hrdd" target="_blank" class="text-center bg-slate-50 hover:bg-blue-600 hover:text-white text-slate-700 px-2 py-2 rounded text-xs font-bold transition-all border border-slate-200">
+                                    臺灣 HRDD 現況
+                                </a>
+                                <a href="https://ecoshane.pse.is/coco_bank" target="_blank" class="text-center bg-slate-50 hover:bg-blue-600 hover:text-white text-slate-700 px-2 py-2 rounded text-xs font-bold transition-all border border-slate-200">
+                                    虛擬銀行
+                                </a>
+                                <a href="https://ecoshane.pse.is/coco_esghome" target="_blank" class="text-center bg-slate-50 hover:bg-blue-600 hover:text-white text-slate-700 px-2 py-2 rounded text-xs font-bold transition-all border border-slate-200">
+                                    虛擬顧問公司
+                                </a>
+                                <a href="https://ecoshane.pse.is/esgdata" target="_blank" class="text-center bg-slate-50 hover:bg-blue-600 hover:text-white text-slate-700 px-2 py-2 rounded text-xs font-bold transition-all border border-slate-200">
+                                    永續數據平台
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Project 3: 統領百貨 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col group h-full border border-slate-100">
                     <div class="relative h-48 overflow-hidden bg-gray-200">
                         <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-all z-10"></div>
@@ -361,8 +386,10 @@
                         <p class="text-slate-600 text-sm mb-4 flex-1">
                             協助上市櫃公司進行報告書內容修訂與優化。檢視內容符合 GRI 準則，提升資訊揭露品質，確保合規性。
                         </p>
-                        <div class="mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-pink-600 text-sm font-bold flex items-center">專案成果展示</span>
+                        
+                        <!-- 底部區域移除內容，保留結構以維持卡片高度一致 -->
+                        <div class="mt-auto pt-4 border-t border-transparent">
+                            <div class="h-8"></div>
                         </div>
                     </div>
                 </div>
@@ -393,7 +420,7 @@
         </div>
     </section>
 
- <section class="py-12 bg-purple-50 border-t border-purple-100">
+    <section class="py-12 bg-purple-50 border-t border-purple-100">
         <div class="max-w-4xl mx-auto px-6 text-left">
             <h4 class="text-brand-muted font-bold text-xs uppercase tracking-widest mb-3">MY COLOR IDENTITY</h4>
             <p class="text-slate-600 text-sm leading-relaxed">
